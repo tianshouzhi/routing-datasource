@@ -40,6 +40,10 @@ public class AopTest {
 //		assert userSelectMapper instanceof Advised;
 	}
 
+	/**
+	 * 测试Routing注解在@Transactional注解之前生效
+	 * @throws Exception
+	 */
 	@Test
 	public void testSecondProxy() throws Exception {
 		assert multiDBService instanceof Advised;
