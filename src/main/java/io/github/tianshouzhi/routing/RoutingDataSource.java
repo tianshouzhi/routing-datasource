@@ -118,6 +118,7 @@ public class RoutingDataSource extends AbstractAutoProxyCreator
 				String defaultDataSourceBeanName = (String) this.defaultTargetDataSource;
 				this.resolvedDefaultTargetDataSource = getBeanFactory().getBean(defaultDataSourceBeanName,
 				      DataSource.class);
+				return;
 			}
 			throw new IllegalArgumentException(
 			      "defaultTargetDataSource must be instance of DataSource or the bean " + "name of a DataSource");
